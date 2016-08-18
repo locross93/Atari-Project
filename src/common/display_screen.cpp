@@ -39,6 +39,7 @@ DisplayScreen::DisplayScreen(MediaSource* mediaSource,
     }
     // screen = SDL_SetVideoMode(window_width, window_height, 8, SDL_HWPALETTE);
     screen = SDL_SetVideoMode(window_width, window_height, 8, SDL_HWPALETTE | SDL_FULLSCREEN);
+    SDL_ShowCursor(0);
     if (screen == NULL) {
         fprintf(stderr, "Couldn't Initialize Screen: %s\n", SDL_GetError());
         exit(1);
