@@ -13,6 +13,7 @@
  *
  *  Supports displaying the screen via SDL. 
  **************************************************************************** */
+ //ive added this
 #include "display_screen.h"
 #include "SoundSDL.hxx"
 using namespace std;
@@ -36,12 +37,15 @@ DisplayScreen::DisplayScreen(MediaSource* mediaSource,
         fprintf(stderr, "Could not initialize SDL: %s\n", SDL_GetError());
         exit(1);
     }
-    screen = SDL_SetVideoMode(window_width, window_height, 8, SDL_HWPALETTE);
+    // screen = SDL_SetVideoMode(window_width, window_height, 8, SDL_HWPALETTE);
+    screen = SDL_SetVideoMode(window_width, window_height, 8, SDL_HWPALETTE | SDL_FULLSCREEN);
     if (screen == NULL) {
         fprintf(stderr, "Couldn't Initialize Screen: %s\n", SDL_GetError());
         exit(1);
     }
     SDL_WM_SetCaption("ALE Viz", NULL);
+    //Uint32 FullscreenFlag = SDL_WINDOW_FULLSCREEN;
+    //SDL_SetWindowFullscreen(screen, 1, SDL_GRAB_FULLSCREEN);
     fprintf(stderr, "Screen Display Active. [Manual Control Mode] 'm' "
             "[Slowdown] 'a' [Speedup] 's' [VolumeDown] '[' [VolumeUp] ']'.\n");
 
@@ -199,9 +203,13 @@ Action DisplayScreen::getUserAction() {
       a = PLAYER_A_UP;
     } else if (keymap[SDLK_DOWN]) {
       a = PLAYER_A_DOWN;
-    }else if (keymap[SDLK_5]){
+    } else if (keymap[SDLK_5]){
         a = MRI_PULSE;
     }
+      else if (keymap[SDLK_q]){
+        SDL_Quit();
+    }
+    
 
     return a;
 }
