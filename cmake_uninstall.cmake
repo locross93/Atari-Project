@@ -1,9 +1,9 @@
 
-IF(NOT EXISTS "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/install_manifest.txt")
-  MESSAGE(FATAL_ERROR "Cannot find install manifest: /Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/install_manifest.txt")
-ENDIF(NOT EXISTS "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/install_manifest.txt")
+IF(NOT EXISTS "/Users/logancross/Documents/Atari/Atari-Project-Jeff/install_manifest.txt")
+  MESSAGE(FATAL_ERROR "Cannot find install manifest: /Users/logancross/Documents/Atari/Atari-Project-Jeff/install_manifest.txt")
+ENDIF(NOT EXISTS "/Users/logancross/Documents/Atari/Atari-Project-Jeff/install_manifest.txt")
 
-FILE(READ "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/install_manifest.txt" files)
+FILE(READ "/Users/logancross/Documents/Atari/Atari-Project-Jeff/install_manifest.txt" files)
 STRING(REGEX REPLACE "\n" ";" files "${files}")
 FOREACH(file ${files})
   MESSAGE(STATUS "Uninstalling "$ENV{DESTDIR}${file}"")

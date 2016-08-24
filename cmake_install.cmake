@@ -1,4 +1,4 @@
-# Install script for directory: /Users/logancross/Documents/Atari/Arcade-Learning-Environment-master
+# Install script for directory: /Users/logancross/Documents/Atari/Atari-Project-Jeff
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -37,10 +37,10 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
 file(INSTALL DESTINATION "/usr/local/include/ale/os_dependent" TYPE FILE FILES
-    "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/os_dependent/SettingsUNIX.hxx"
-    "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/os_dependent/SettingsWin32.hxx"
-    "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/os_dependent/OSystemUNIX.hxx"
-    "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/os_dependent/OSystemWin32.hxx"
+    "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/os_dependent/SettingsUNIX.hxx"
+    "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/os_dependent/SettingsWin32.hxx"
+    "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/os_dependent/OSystemUNIX.hxx"
+    "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/os_dependent/OSystemWin32.hxx"
     )
 endif()
 
@@ -53,7 +53,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/ale_interface.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/ale_interface.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -65,7 +65,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/common/Constants.h")
+file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/common/Constants.h")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -77,7 +77,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/common/display_screen.h")
+file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/common/display_screen.h")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -89,7 +89,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/common/misc_tools.h")
+file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/common/misc_tools.h")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -101,7 +101,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/common/Array.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/common/Array.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -113,7 +113,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/common/ColourPalette.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/common/ColourPalette.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -125,7 +125,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/common/Log.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/common/Log.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -137,7 +137,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/common/Palettes.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/common/Palettes.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -149,7 +149,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/common/ScreenExporter.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/common/ScreenExporter.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -161,7 +161,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/common/SoundExporter.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/common/SoundExporter.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -173,7 +173,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/common/SoundNull.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/common/SoundNull.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -185,7 +185,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/common/SoundSDL.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/common/SoundSDL.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -197,7 +197,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/common/Version.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/common/Version.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -209,7 +209,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/common/VideoModeList.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/common/VideoModeList.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -221,7 +221,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/controllers" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/controllers/ale_controller.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/controllers" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/controllers/ale_controller.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -233,7 +233,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/controllers" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/controllers/fifo_controller.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/controllers" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/controllers/fifo_controller.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -245,7 +245,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/controllers" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/controllers/rlglue_controller.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/controllers" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/controllers/rlglue_controller.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -257,7 +257,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/unzip.h")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/unzip.h")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -269,7 +269,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/AtariVox.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/AtariVox.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -281,7 +281,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/Booster.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/Booster.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -293,7 +293,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/Cart.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/Cart.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -305,7 +305,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/Cart0840.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/Cart0840.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -317,7 +317,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/Cart2K.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/Cart2K.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -329,7 +329,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/Cart3E.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/Cart3E.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -341,7 +341,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/Cart3F.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/Cart3F.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -353,7 +353,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/Cart4A50.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/Cart4A50.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -365,7 +365,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/Cart4K.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/Cart4K.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -377,7 +377,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/CartAR.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/CartAR.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -389,7 +389,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/CartCV.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/CartCV.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -401,7 +401,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/CartDPC.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/CartDPC.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -413,7 +413,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/CartE0.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/CartE0.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -425,7 +425,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/CartE7.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/CartE7.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -437,7 +437,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/CartF4.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/CartF4.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -449,7 +449,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/CartF4SC.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/CartF4SC.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -461,7 +461,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/CartF6.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/CartF6.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -473,7 +473,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/CartF6SC.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/CartF6SC.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -485,7 +485,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/CartF8.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/CartF8.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -497,7 +497,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/CartF8SC.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/CartF8SC.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -509,7 +509,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/CartFASC.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/CartFASC.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -521,7 +521,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/CartFE.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/CartFE.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -533,7 +533,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/CartMB.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/CartMB.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -545,7 +545,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/CartMC.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/CartMC.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -557,7 +557,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/CartUA.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/CartUA.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -569,7 +569,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/Console.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/Console.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -581,7 +581,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/Control.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/Control.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -593,7 +593,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/DefProps.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/DefProps.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -605,7 +605,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/Deserializer.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/Deserializer.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -617,7 +617,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/Driving.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/Driving.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -629,7 +629,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/Event.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/Event.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -641,7 +641,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/FSNode.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/FSNode.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -653,7 +653,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/Joystick.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/Joystick.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -665,7 +665,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/Keyboard.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/Keyboard.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -677,7 +677,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/M6532.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/M6532.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -689,7 +689,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/MD5.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/MD5.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -701,7 +701,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/MediaSrc.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/MediaSrc.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -713,7 +713,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/OSystem.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/OSystem.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -725,7 +725,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/Paddles.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/Paddles.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -737,7 +737,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/Props.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/Props.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -749,7 +749,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/PropsSet.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/PropsSet.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -761,7 +761,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/Random.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/Random.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -773,7 +773,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/Serializer.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/Serializer.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -785,7 +785,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/Settings.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/Settings.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -797,7 +797,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/Sound.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/Sound.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -809,7 +809,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/SpeakJet.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/SpeakJet.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -821,7 +821,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/Switches.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/Switches.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -833,7 +833,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/TIA.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/TIA.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -845,7 +845,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/TIASnd.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/TIASnd.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -857,7 +857,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore/m6502/src" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/m6502/src/Device.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore/m6502/src" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/m6502/src/Device.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -869,7 +869,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore/m6502/src" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/m6502/src/M6502.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore/m6502/src" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/m6502/src/M6502.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -881,7 +881,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore/m6502/src" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/m6502/src/M6502Hi.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore/m6502/src" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/m6502/src/M6502Hi.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -893,7 +893,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore/m6502/src" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/m6502/src/M6502Low.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore/m6502/src" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/m6502/src/M6502Low.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -905,7 +905,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore/m6502/src" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/m6502/src/NullDev.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore/m6502/src" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/m6502/src/NullDev.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -917,7 +917,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore/m6502/src" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/m6502/src/System.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore/m6502/src" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/m6502/src/System.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -929,7 +929,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/emucore/m6502/src/bspf/src" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/m6502/src/bspf/src/bspf.hxx")
+file(INSTALL DESTINATION "/usr/local/include/ale/emucore/m6502/src/bspf/src" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/m6502/src/bspf/src/bspf.hxx")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -941,7 +941,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/environment" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/environment/ale_ram.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/environment" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/environment/ale_ram.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -953,7 +953,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/environment" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/environment/ale_screen.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/environment" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/environment/ale_screen.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -965,7 +965,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/environment" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/environment/ale_state.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/environment" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/environment/ale_state.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -977,7 +977,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/environment" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/environment/phosphor_blend.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/environment" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/environment/phosphor_blend.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -989,7 +989,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/environment" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/environment/stella_environment.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/environment" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/environment/stella_environment.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1001,7 +1001,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/Roms.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/Roms.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1013,7 +1013,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/RomSettings.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/RomSettings.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1025,7 +1025,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/RomUtils.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/RomUtils.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1037,7 +1037,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/AirRaid.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/AirRaid.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1049,7 +1049,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/Alien.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/Alien.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1061,7 +1061,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/Amidar.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/Amidar.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1073,7 +1073,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/Assault.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/Assault.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1085,7 +1085,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/Asterix.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/Asterix.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1097,7 +1097,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/Asteroids.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/Asteroids.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1109,7 +1109,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/Atlantis.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/Atlantis.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1121,7 +1121,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/BankHeist.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/BankHeist.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1133,7 +1133,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/BattleZone.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/BattleZone.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1145,7 +1145,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/BeamRider.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/BeamRider.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1157,7 +1157,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/Berzerk.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/Berzerk.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1169,7 +1169,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/Bowling.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/Bowling.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1181,7 +1181,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/Boxing.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/Boxing.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1193,7 +1193,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/Breakout.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/Breakout.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1205,7 +1205,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/Carnival.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/Carnival.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1217,7 +1217,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/Centipede.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/Centipede.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1229,7 +1229,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/ChopperCommand.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/ChopperCommand.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1241,7 +1241,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/CrazyClimber.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/CrazyClimber.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1253,7 +1253,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/Defender.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/Defender.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1265,7 +1265,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/DemonAttack.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/DemonAttack.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1277,7 +1277,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/DonkeyKong.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/DonkeyKong.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1289,7 +1289,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/DoubleDunk.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/DoubleDunk.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1301,7 +1301,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/ElevatorAction.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/ElevatorAction.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1313,7 +1313,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/Enduro.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/Enduro.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1325,7 +1325,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/FishingDerby.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/FishingDerby.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1337,7 +1337,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/Freeway.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/Freeway.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1349,7 +1349,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/Frogger.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/Frogger.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1361,7 +1361,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/Frostbite.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/Frostbite.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1373,7 +1373,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/Galaxian.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/Galaxian.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1385,7 +1385,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/Gopher.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/Gopher.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1397,7 +1397,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/Gravitar.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/Gravitar.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1409,7 +1409,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/Hero.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/Hero.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1421,7 +1421,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/IceHockey.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/IceHockey.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1433,7 +1433,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/JamesBond.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/JamesBond.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1445,7 +1445,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/JourneyEscape.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/JourneyEscape.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1457,7 +1457,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/Kangaroo.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/Kangaroo.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1469,7 +1469,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/KeystoneKapers.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/KeystoneKapers.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1481,7 +1481,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/Kingkong.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/Kingkong.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1493,7 +1493,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/Koolaid.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/Koolaid.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1505,7 +1505,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/Krull.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/Krull.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1517,7 +1517,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/KungFuMaster.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/KungFuMaster.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1529,7 +1529,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/LaserGates.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/LaserGates.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1541,7 +1541,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/LostLuggage.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/LostLuggage.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1553,7 +1553,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/MontezumaRevenge.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/MontezumaRevenge.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1565,7 +1565,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/MrDo.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/MrDo.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1577,7 +1577,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/MsPacman.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/MsPacman.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1589,7 +1589,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/NameThisGame.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/NameThisGame.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1601,7 +1601,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/Phoenix.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/Phoenix.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1613,7 +1613,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/Pitfall.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/Pitfall.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1625,7 +1625,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/Pong.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/Pong.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1637,7 +1637,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/Pooyan.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/Pooyan.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1649,7 +1649,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/PrivateEye.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/PrivateEye.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1661,7 +1661,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/QBert.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/QBert.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1673,7 +1673,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/RiverRaid.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/RiverRaid.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1685,7 +1685,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/RoadRunner.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/RoadRunner.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1697,7 +1697,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/RoboTank.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/RoboTank.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1709,7 +1709,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/Seaquest.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/Seaquest.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1721,7 +1721,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/SirLancelot.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/SirLancelot.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1733,7 +1733,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/Skiing.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/Skiing.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1745,7 +1745,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/Solaris.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/Solaris.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1757,7 +1757,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/SpaceInvaders.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/SpaceInvaders.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1769,7 +1769,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/StarGunner.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/StarGunner.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1781,7 +1781,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/Tennis.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/Tennis.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1793,7 +1793,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/Tetris.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/Tetris.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1805,7 +1805,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/TimePilot.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/TimePilot.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1817,7 +1817,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/Trondead.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/Trondead.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1829,7 +1829,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/Turmoil.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/Turmoil.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1841,7 +1841,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/Tutankham.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/Tutankham.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1853,7 +1853,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/UpNDown.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/UpNDown.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1865,7 +1865,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/Venture.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/Venture.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1877,7 +1877,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/VideoPinball.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/VideoPinball.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1889,7 +1889,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/WizardOfWor.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/WizardOfWor.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1901,7 +1901,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/YarsRevenge.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/YarsRevenge.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1913,7 +1913,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/games/supported/Zaxxon.hpp")
+file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/games/supported/Zaxxon.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1925,7 +1925,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/ale/external/TinyMT" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/external/TinyMT/tinymt32.h")
+file(INSTALL DESTINATION "/usr/local/include/ale/external/TinyMT" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/external/TinyMT/tinymt32.h")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1937,7 +1937,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/lib/pkgconfig" TYPE FILE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/ale.pc")
+file(INSTALL DESTINATION "/usr/local/lib/pkgconfig" TYPE FILE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/ale.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -1949,7 +1949,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/lib" TYPE SHARED_LIBRARY FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/libale.so")
+file(INSTALL DESTINATION "/usr/local/lib" TYPE SHARED_LIBRARY FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/libale.so")
   if(EXISTS "$ENV{DESTDIR}/usr/local/lib/libale.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}/usr/local/lib/libale.so")
     execute_process(COMMAND "/usr/bin/install_name_tool"
@@ -1962,7 +1962,7 @@ file(INSTALL DESTINATION "/usr/local/lib" TYPE SHARED_LIBRARY FILES "/Users/loga
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/ale")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/ale")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/ale" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/ale")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -1980,7 +1980,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/lib" TYPE SHARED_LIBRARY FILES "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/ale_python_interface/libale_c.so")
+file(INSTALL DESTINATION "/usr/local/lib" TYPE SHARED_LIBRARY FILES "/Users/logancross/Documents/Atari/Atari-Project-Jeff/ale_python_interface/libale_c.so")
   if(EXISTS "$ENV{DESTDIR}/usr/local/lib/libale_c.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}/usr/local/lib/libale_c.so")
     execute_process(COMMAND "/usr/bin/install_name_tool"
@@ -2000,5 +2000,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/logancross/Documents/Atari/Atari-Project-Jeff/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

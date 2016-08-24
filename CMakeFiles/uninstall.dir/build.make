@@ -43,10 +43,10 @@ RM = /usr/local/Cellar/cmake/3.5.2/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/logancross/Documents/Atari/Arcade-Learning-Environment-master
+CMAKE_SOURCE_DIR = /Users/logancross/Documents/Atari/Atari-Project-Jeff
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/logancross/Documents/Atari/Arcade-Learning-Environment-master
+CMAKE_BINARY_DIR = /Users/logancross/Documents/Atari/Atari-Project-Jeff
 
 # Utility rule file for uninstall.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /Users/logancross/Documents/Atari/Arcade-Learning-Environment
 include CMakeFiles/uninstall.dir/progress.make
 
 CMakeFiles/uninstall:
-	/usr/local/Cellar/cmake/3.5.2/bin/cmake -P /Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/cmake_uninstall.cmake
+	/usr/local/Cellar/cmake/3.5.2/bin/cmake -P /Users/logancross/Documents/Atari/Atari-Project-Jeff/cmake_uninstall.cmake
 	rm -rf /usr/local/include/ale
 
 uninstall: CMakeFiles/uninstall
@@ -72,6 +72,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /Users/logancross/Documents/Atari/Arcade-Learning-Environment-master && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/logancross/Documents/Atari/Arcade-Learning-Environment-master /Users/logancross/Documents/Atari/Arcade-Learning-Environment-master /Users/logancross/Documents/Atari/Arcade-Learning-Environment-master /Users/logancross/Documents/Atari/Arcade-Learning-Environment-master /Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/logancross/Documents/Atari/Atari-Project-Jeff && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/logancross/Documents/Atari/Atari-Project-Jeff /Users/logancross/Documents/Atari/Atari-Project-Jeff /Users/logancross/Documents/Atari/Atari-Project-Jeff /Users/logancross/Documents/Atari/Atari-Project-Jeff /Users/logancross/Documents/Atari/Atari-Project-Jeff/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

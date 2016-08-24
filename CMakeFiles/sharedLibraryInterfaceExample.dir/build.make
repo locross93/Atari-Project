@@ -43,10 +43,10 @@ RM = /usr/local/Cellar/cmake/3.5.2/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/logancross/Documents/Atari/Arcade-Learning-Environment-master
+CMAKE_SOURCE_DIR = /Users/logancross/Documents/Atari/Atari-Project-Jeff
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/logancross/Documents/Atari/Arcade-Learning-Environment-master
+CMAKE_BINARY_DIR = /Users/logancross/Documents/Atari/Atari-Project-Jeff
 
 # Include any dependencies generated for this target.
 include CMakeFiles/sharedLibraryInterfaceExample.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/sharedLibraryInterfaceExample.dir/flags.make
 
 CMakeFiles/sharedLibraryInterfaceExample.dir/doc/examples/sharedLibraryInterfaceExample.cpp.o: CMakeFiles/sharedLibraryInterfaceExample.dir/flags.make
 CMakeFiles/sharedLibraryInterfaceExample.dir/doc/examples/sharedLibraryInterfaceExample.cpp.o: doc/examples/sharedLibraryInterfaceExample.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sharedLibraryInterfaceExample.dir/doc/examples/sharedLibraryInterfaceExample.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sharedLibraryInterfaceExample.dir/doc/examples/sharedLibraryInterfaceExample.cpp.o -c /Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/doc/examples/sharedLibraryInterfaceExample.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/logancross/Documents/Atari/Atari-Project-Jeff/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sharedLibraryInterfaceExample.dir/doc/examples/sharedLibraryInterfaceExample.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sharedLibraryInterfaceExample.dir/doc/examples/sharedLibraryInterfaceExample.cpp.o -c /Users/logancross/Documents/Atari/Atari-Project-Jeff/doc/examples/sharedLibraryInterfaceExample.cpp
 
 CMakeFiles/sharedLibraryInterfaceExample.dir/doc/examples/sharedLibraryInterfaceExample.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sharedLibraryInterfaceExample.dir/doc/examples/sharedLibraryInterfaceExample.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/doc/examples/sharedLibraryInterfaceExample.cpp > CMakeFiles/sharedLibraryInterfaceExample.dir/doc/examples/sharedLibraryInterfaceExample.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/logancross/Documents/Atari/Atari-Project-Jeff/doc/examples/sharedLibraryInterfaceExample.cpp > CMakeFiles/sharedLibraryInterfaceExample.dir/doc/examples/sharedLibraryInterfaceExample.cpp.i
 
 CMakeFiles/sharedLibraryInterfaceExample.dir/doc/examples/sharedLibraryInterfaceExample.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sharedLibraryInterfaceExample.dir/doc/examples/sharedLibraryInterfaceExample.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/doc/examples/sharedLibraryInterfaceExample.cpp -o CMakeFiles/sharedLibraryInterfaceExample.dir/doc/examples/sharedLibraryInterfaceExample.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/logancross/Documents/Atari/Atari-Project-Jeff/doc/examples/sharedLibraryInterfaceExample.cpp -o CMakeFiles/sharedLibraryInterfaceExample.dir/doc/examples/sharedLibraryInterfaceExample.cpp.s
 
 CMakeFiles/sharedLibraryInterfaceExample.dir/doc/examples/sharedLibraryInterfaceExample.cpp.o.requires:
 
@@ -93,7 +93,7 @@ doc/examples/ale-sharedLibraryInterfaceExample: CMakeFiles/sharedLibraryInterfac
 doc/examples/ale-sharedLibraryInterfaceExample: /usr/local/lib/libSDLmain.a
 doc/examples/ale-sharedLibraryInterfaceExample: /usr/local/lib/libSDL.dylib
 doc/examples/ale-sharedLibraryInterfaceExample: CMakeFiles/sharedLibraryInterfaceExample.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable doc/examples/ale-sharedLibraryInterfaceExample"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/logancross/Documents/Atari/Atari-Project-Jeff/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable doc/examples/ale-sharedLibraryInterfaceExample"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sharedLibraryInterfaceExample.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -110,6 +110,6 @@ CMakeFiles/sharedLibraryInterfaceExample.dir/clean:
 .PHONY : CMakeFiles/sharedLibraryInterfaceExample.dir/clean
 
 CMakeFiles/sharedLibraryInterfaceExample.dir/depend:
-	cd /Users/logancross/Documents/Atari/Arcade-Learning-Environment-master && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/logancross/Documents/Atari/Arcade-Learning-Environment-master /Users/logancross/Documents/Atari/Arcade-Learning-Environment-master /Users/logancross/Documents/Atari/Arcade-Learning-Environment-master /Users/logancross/Documents/Atari/Arcade-Learning-Environment-master /Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/CMakeFiles/sharedLibraryInterfaceExample.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/logancross/Documents/Atari/Atari-Project-Jeff && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/logancross/Documents/Atari/Atari-Project-Jeff /Users/logancross/Documents/Atari/Atari-Project-Jeff /Users/logancross/Documents/Atari/Atari-Project-Jeff /Users/logancross/Documents/Atari/Atari-Project-Jeff /Users/logancross/Documents/Atari/Atari-Project-Jeff/CMakeFiles/sharedLibraryInterfaceExample.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/sharedLibraryInterfaceExample.dir/depend
 

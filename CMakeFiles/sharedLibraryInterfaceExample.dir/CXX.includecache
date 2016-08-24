@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/doc/examples/sharedLibraryInterfaceExample.cpp
+/Users/logancross/Documents/Atari/Atari-Project-Jeff/doc/examples/sharedLibraryInterfaceExample.cpp
 iostream
 -
 ale_interface.hpp

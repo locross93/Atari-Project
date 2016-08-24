@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/unzip.c
+/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/unzip.c
 stdio.h
 -
 stdlib.h
@@ -16,7 +16,7 @@ string.h
 zlib.h
 -
 unzip.h
-/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/unzip.h
+/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/unzip.h
 stddef.h
 -
 string.h
@@ -26,15 +26,15 @@ stdlib.h
 errno.h
 -
 
-/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/unzip.h
+/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/emucore/unzip.h
 zlib.h
 -
 
-/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/external/TinyMT/tinymt32.c
+/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/external/TinyMT/tinymt32.c
 tinymt32.h
-/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/external/TinyMT/tinymt32.h
+/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/external/TinyMT/tinymt32.h
 
-/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/external/TinyMT/tinymt32.h
+/Users/logancross/Documents/Atari/Atari-Project-Jeff/src/external/TinyMT/tinymt32.h
 stdint.h
 -
 inttypes.h

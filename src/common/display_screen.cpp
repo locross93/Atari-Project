@@ -13,7 +13,6 @@
  *
  *  Supports displaying the screen via SDL. 
  **************************************************************************** */
- //ive added this
 #include "display_screen.h"
 #include "SoundSDL.hxx"
 using namespace std;
@@ -21,7 +20,7 @@ using namespace std;
 DisplayScreen::DisplayScreen(MediaSource* mediaSource,
                              Sound* sound,
                              ColourPalette &palette):
-        manual_control_active(false),
+        manual_control_active(true),
         media_source(mediaSource),
         my_sound(sound),
         colour_palette(palette),
@@ -33,27 +32,50 @@ DisplayScreen::DisplayScreen(MediaSource* mediaSource,
     assert(window_width >= screen_width);
     yratio = window_height / (float) screen_height;
     xratio = window_width / (float) screen_width;
-    if (SDL_Init(SDL_INIT_VIDEO) < 0) {
+    if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_JOYSTICK) < 0) {
         fprintf(stderr, "Could not initialize SDL: %s\n", SDL_GetError());
         exit(1);
     }
-    // screen = SDL_SetVideoMode(window_width, window_height, 8, SDL_HWPALETTE);
-    screen = SDL_SetVideoMode(window_width, window_height, 8, SDL_HWPALETTE | SDL_FULLSCREEN);
-    SDL_ShowCursor(0);
+    screen = SDL_SetVideoMode(window_width, window_height, 8, SDL_HWPALETTE);
     if (screen == NULL) {
         fprintf(stderr, "Couldn't Initialize Screen: %s\n", SDL_GetError());
         exit(1);
     }
     SDL_WM_SetCaption("ALE Viz", NULL);
-    //Uint32 FullscreenFlag = SDL_WINDOW_FULLSCREEN;
-    //SDL_SetWindowFullscreen(screen, 1, SDL_GRAB_FULLSCREEN);
     fprintf(stderr, "Screen Display Active. [Manual Control Mode] 'm' "
             "[Slowdown] 'a' [Speedup] 's' [VolumeDown] '[' [VolumeUp] ']'.\n");
 
     last_frame_time = SDL_GetTicks();
+
+    // SDL_JoystickEventState(SDL_ENABLE);
+    // // Check for joystick
+    // if(SDL_NumJoysticks()>0){
+    //   // Open joystick
+    //   joy=SDL_JoystickOpen(0);
+      
+    //   if(joy)
+    //   {
+    //     printf("Opened Joystick 0\n");
+    //     printf("Name: %s\n", SDL_JoystickName(0));
+    //     printf("Number of Axes: %d\n", SDL_JoystickNumAxes(joy));
+    //     printf("Number of Buttons: %d\n", SDL_JoystickNumButtons(joy));
+    //     printf("Number of Balls: %d\n", SDL_JoystickNumBalls(joy));
+    //   }
+    //   else
+    //     printf("Couldn't open Joystick 0\n");
+      
+      
+    // }else{
+    //     printf("No Joystick 0\n");
+    // }
+
 }
 
 DisplayScreen::~DisplayScreen() {
+    // // Close if opened
+    //   if(SDL_JoystickOpened(0))
+    //     SDL_JoystickClose(joy);
+
     SDL_Quit();
 }
 
@@ -106,9 +128,13 @@ void DisplayScreen::poll() {
 };
 
 void DisplayScreen::handleSDLEvent(const SDL_Event& event) {
+    
     switch (event.type) {
         case SDL_QUIT:
             exit(0);
+            break;
+        case SDL_JOYAXISMOTION:
+            // std::cout << "joy!\n";
             break;
         case SDL_KEYDOWN:
             switch(event.key.keysym.sym) {
@@ -158,10 +184,48 @@ Action DisplayScreen::getUserAction() {
     }
 
     Action a = PLAYER_A_NOOP;
+    // Uint32 buttonmap;
     poll();
     SDL_PumpEvents();
     Uint8* keymap = SDL_GetKeyState(NULL);
 
+    int mdltx, mdlty;
+    auto r = SDL_GetRelativeMouseState(&mdltx, &mdlty);
+
+    std::cout << mdltx << " x \n";
+
+    if( !!(r&SDL_BUTTON(SDL_BUTTON_RIGHT)) ){
+        std::cout << "Is right\n";
+    }
+
+    if( !!(r&SDL_BUTTON(SDL_BUTTON_LEFT)) ){
+        std::cout << "Is left\n";
+    }
+
+
+    // std::cout << !!(r&SDL_BUTTON(SDL_BUTTON_RIGHT)) << " is right \n";
+    // std::cout << !!(r&SDL_BUTTON(SDL_BUTTON_LEFT)) << " is left \n";
+
+
+    // std::cout << "is left? " << r&SDL_BUTTON(SDL_BUTTON_LEFT) << "\n";
+
+
+    // r&SDL_BUTTON(1);
+    // std::cout << r << "\n";
+
+    // std::cout << "is left? " << buttonmap[SDL_BUTTON_LEFT] << "\n";
+    // std::cout << "is right? " << buttonmap[SDL_BUTTON_RIGHT] << "\n";
+
+    // std::cout << mdltx << ":x:\n";
+    // std::cout << mdlty << ":y:\n";
+
+
+    // Sint16 x_move, y_move;
+    // x_move=SDL_JoystickGetAxis(joy, 0);
+    // y_move=SDL_JoystickGetAxis(joy, 1);
+    // Uint8 joyButton;
+    
+    
     // Break out of this loop if the 'p' key is pressed
     if (keymap[SDLK_p]) {
       return PLAYER_A_NOOP;
@@ -192,25 +256,22 @@ Action DisplayScreen::getUserAction() {
     } else if (keymap[SDLK_RIGHT] && keymap[SDLK_SPACE]) {
       a = PLAYER_A_RIGHTFIRE;
       // Single Actions
-    } else if (keymap[SDLK_SPACE]) {
+    } else if (keymap[SDLK_SPACE] || keymap[SDLK_2] || keymap[SDLK_3] || !!(r&SDL_BUTTON(SDL_BUTTON_RIGHT)) || !!(r&SDL_BUTTON(SDL_BUTTON_LEFT))) {
       a = PLAYER_A_FIRE;
     } else if (keymap[SDLK_RETURN]) {
       a = PLAYER_A_NOOP;
-    } else if (keymap[SDLK_LEFT]) {
+    } else if (keymap[SDLK_LEFT] || mdltx < 0) {
       a = PLAYER_A_LEFT;
-    } else if (keymap[SDLK_RIGHT]) {
+    } else if (keymap[SDLK_RIGHT] || mdltx > 0) {
       a = PLAYER_A_RIGHT;
-    } else if (keymap[SDLK_UP]) {
+    } else if (keymap[SDLK_UP] || mdlty < 0) {
       a = PLAYER_A_UP;
-    } else if (keymap[SDLK_DOWN]) {
+    } else if (keymap[SDLK_DOWN] || mdlty > 0) {
       a = PLAYER_A_DOWN;
-    } else if (keymap[SDLK_5]){
+    }else if (keymap[SDLK_5]){
         a = MRI_PULSE;
     }
-      else if (keymap[SDLK_q]){
-        SDL_Quit();
-    }
-    
+
 
     return a;
 }

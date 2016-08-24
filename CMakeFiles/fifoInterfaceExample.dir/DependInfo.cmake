@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/doc/examples/fifoInterfaceExample.cpp" "/Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/CMakeFiles/fifoInterfaceExample.dir/doc/examples/fifoInterfaceExample.cpp.o"
+  "/Users/logancross/Documents/Atari/Atari-Project-Jeff/doc/examples/fifoInterfaceExample.cpp" "/Users/logancross/Documents/Atari/Atari-Project-Jeff/CMakeFiles/fifoInterfaceExample.dir/doc/examples/fifoInterfaceExample.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 
