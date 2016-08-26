@@ -21,7 +21,7 @@ using namespace std;
 DisplayScreen::DisplayScreen(MediaSource* mediaSource,
                              Sound* sound,
                              ColourPalette &palette):
-        manual_control_active(false),
+        manual_control_active(true),
         media_source(mediaSource),
         my_sound(sound),
         colour_palette(palette),
@@ -37,9 +37,13 @@ DisplayScreen::DisplayScreen(MediaSource* mediaSource,
         fprintf(stderr, "Could not initialize SDL: %s\n", SDL_GetError());
         exit(1);
     }
-    // screen = SDL_SetVideoMode(window_width, window_height, 8, SDL_HWPALETTE);
-    screen = SDL_SetVideoMode(window_width, window_height, 8, SDL_HWPALETTE | SDL_FULLSCREEN);
+    screen = SDL_SetVideoMode(window_width, window_height, 8, SDL_HWPALETTE);
+    // uncomment for full screen 
+    // screen = SDL_SetVideoMode(window_width, window_height, 8, SDL_HWPALETTE | SDL_FULLSCREEN);
     SDL_ShowCursor(0);
+    // SDL_SetRelativeMouseMode(SDL_TRUE);
+    SDL_WM_GrabInput( SDL_GRAB_ON );
+
     if (screen == NULL) {
         fprintf(stderr, "Couldn't Initialize Screen: %s\n", SDL_GetError());
         exit(1);
@@ -162,6 +166,9 @@ Action DisplayScreen::getUserAction() {
     SDL_PumpEvents();
     Uint8* keymap = SDL_GetKeyState(NULL);
 
+    int mdltx, mdlty;
+    auto r = SDL_GetRelativeMouseState(&mdltx, &mdlty);
+
     // Break out of this loop if the 'p' key is pressed
     if (keymap[SDLK_p]) {
       return PLAYER_A_NOOP;
@@ -192,17 +199,17 @@ Action DisplayScreen::getUserAction() {
     } else if (keymap[SDLK_RIGHT] && keymap[SDLK_SPACE]) {
       a = PLAYER_A_RIGHTFIRE;
       // Single Actions
-    } else if (keymap[SDLK_SPACE]) {
+    } else if (keymap[SDLK_SPACE] || keymap[SDLK_2] || keymap[SDLK_3] || !!(r&SDL_BUTTON(SDL_BUTTON_RIGHT)) || !!(r&SDL_BUTTON(SDL_BUTTON_LEFT))) {
       a = PLAYER_A_FIRE;
     } else if (keymap[SDLK_RETURN]) {
       a = PLAYER_A_NOOP;
-    } else if (keymap[SDLK_LEFT]) {
+    } else if (keymap[SDLK_LEFT] || mdltx < 0) {
       a = PLAYER_A_LEFT;
-    } else if (keymap[SDLK_RIGHT]) {
+    } else if (keymap[SDLK_RIGHT] || mdltx > 0) {
       a = PLAYER_A_RIGHT;
-    } else if (keymap[SDLK_UP]) {
+    } else if (keymap[SDLK_UP] || mdlty < 0) {
       a = PLAYER_A_UP;
-    } else if (keymap[SDLK_DOWN]) {
+    } else if (keymap[SDLK_DOWN] || mdlty > 0) {
       a = PLAYER_A_DOWN;
     } else if (keymap[SDLK_5]){
         a = MRI_PULSE;

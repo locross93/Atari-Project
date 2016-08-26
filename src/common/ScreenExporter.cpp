@@ -201,18 +201,17 @@ void ScreenExporter::saveNext(const ALEScreen &screen) {
     m_frame_number++;
 }
 
-void ScreenExporter::saveAction(const Action &action ) {
+void ScreenExporter::saveAction(const Action &action, int reward ) {
 
     // Must have specified a directory. 
     assert(m_path.size() > 0);
-
-    // std::cout << "Time in Milliseconds =" << std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now().time_since_epoch()).count() << std::endl;
 
     std::ostringstream outFileName;
     std::ostringstream actionString;
     
     outFileName << m_path << "/" <<  "actions.txt";
-    actionString << m_frame_number << ":" << action << std::endl;
+
+    actionString << m_frame_number << "," << std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now().time_since_epoch()).count() << "," << action << "," << reward << std::endl;
 
     std::ofstream actFile(outFileName.str(), std::ios_base::app);
     actFile << actionString.str();

@@ -40,7 +40,7 @@ class ScreenExporter {
         void saveNext(const ALEScreen &screen);
 
         /** Save the given action according to our own internal numbering. */
-        void saveAction(const Action &action);
+        void saveAction(const Action &action, int reward);
 
         /** Save the given RAM according to our own internal numbering. */
         void saveRAM(const ALERAM &RAM);

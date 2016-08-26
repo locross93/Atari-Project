@@ -162,23 +162,23 @@ reward_t StellaEnvironment::act(Action player_a_action, Action player_b_action) 
 
     // If so desired, request one frame's worth of sound (this does nothing if recording
     // is not enabled)
-    m_osystem->sound().recordNextFrame();
+    // m_osystem->sound().recordNextFrame();
+
+    
+    // Use the stored actions, which may or may not have changed this frame
+    sum_rewards += oneStepAct(m_player_a_action, m_player_b_action);
 
     // Similarly record screen as needed
     if (m_screen_exporter.get() != NULL){
       // saveAction added by Jeff
       // IMPORTANT
       // saveNext increments the frame index, so it must be called last to ensure matching frame ID #'s for actions and screen capture
-      m_screen_exporter->saveAction(player_a_action);
-      m_screen_exporter->saveNext(m_screen);
+      m_screen_exporter->saveAction(player_a_action, sum_rewards);
       m_screen_exporter->saveRAM(m_ram);
-      //std::cout << "RAM contents =" << typeid(*m_ram.byte(10)).name() << std::endl;
-      //std::cout << "RAM contents =" << m_ram.size() << std::endl;
-    }
-        
+      m_screen_exporter->saveNext(m_screen);
 
-    // Use the stored actions, which may or may not have changed this frame
-    sum_rewards += oneStepAct(m_player_a_action, m_player_b_action);
+    }
+
   }
 
   return sum_rewards;
