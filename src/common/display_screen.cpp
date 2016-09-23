@@ -33,13 +33,14 @@ DisplayScreen::DisplayScreen(MediaSource* mediaSource,
     assert(window_width >= screen_width);
     yratio = window_height / (float) screen_height;
     xratio = window_width / (float) screen_width;
+
     if (SDL_Init(SDL_INIT_VIDEO) < 0) {
         fprintf(stderr, "Could not initialize SDL: %s\n", SDL_GetError());
         exit(1);
     }
     screen = SDL_SetVideoMode(window_width, window_height, 8, SDL_HWPALETTE);
     // uncomment for full screen 
-    // screen = SDL_SetVideoMode(window_width, window_height, 8, SDL_HWPALETTE | SDL_FULLSCREEN);
+    //screen = SDL_SetVideoMode(window_width, window_height, 8, SDL_HWPALETTE | SDL_FULLSCREEN);
     SDL_ShowCursor(0);
     // SDL_SetRelativeMouseMode(SDL_TRUE);
     SDL_WM_GrabInput( SDL_GRAB_ON );
@@ -99,10 +100,13 @@ void DisplayScreen::display_screen() {
     } else {
         // Try to keep up with the delay
         last_frame_time = SDL_GetTicks() + delta - delay_msec;
+        manual_control_active = true;
     }
+
 }
 
 void DisplayScreen::poll() {
+    // manual_control_active = !manual_control_active;
     SDL_Event event;
     while(SDL_PollEvent(&event)) {
         handleSDLEvent(event);
@@ -158,6 +162,7 @@ void DisplayScreen::handleSDLEvent(const SDL_Event& event) {
 
 Action DisplayScreen::getUserAction() {
     if (!manual_control_active) {
+        manual_control_active = true;
         return UNDEFINED;
     }
 
@@ -213,12 +218,12 @@ Action DisplayScreen::getUserAction() {
       a = PLAYER_A_DOWN;
     } else if (keymap[SDLK_5]){
         a = MRI_PULSE;
+        manual_control_active = false;
     }
       else if (keymap[SDLK_q]){
         SDL_Quit();
     }
     
-
     return a;
 }
 

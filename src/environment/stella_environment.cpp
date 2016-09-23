@@ -16,6 +16,7 @@
  **************************************************************************** */
 
 #include "stella_environment.hpp"
+#include <ale_interface.hpp>
 #include "../emucore/m6502/src/System.hxx"
 #include <sstream>
 #include <iostream>
@@ -192,6 +193,7 @@ reward_t StellaEnvironment::oneStepAct(Action player_a_action, Action player_b_a
   //  RESET or SYSTEM_RESET.
   if (isTerminal())
     return 0;
+
 
   // Convert illegal actions into NOOPs; actions such as reset are always legal
   noopIllegalActions(player_a_action, player_b_action);
