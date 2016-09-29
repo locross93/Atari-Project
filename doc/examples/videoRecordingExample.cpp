@@ -17,7 +17,13 @@
 
 #include <iostream>
 #include <ale_interface.hpp>
+#include <sstream>
+#include <fstream>
+#include <stdio.h>
 #include <cstdlib>
+#include <ctime>
+#include <chrono>
+#include <time.h>
 
 #ifndef __USE_SDL
 #error Video recording example is disabled as it requires SDL. Recompile with -DUSE_SDL=ON. 
@@ -43,8 +49,20 @@ int main(int argc, char** argv) {
     // You may leave sound disabled (by setting this flag to false) if so desired. 
     ale.setBool("sound", true);
 
-    std::string recordPath = "record";
-    std::cout << std::endl;
+    time_t rawtime;
+    struct tm * timeinfo;
+    char buffer [80];
+
+    time (&rawtime);
+    timeinfo = localtime (&rawtime);
+
+    strftime (buffer,80,"%m-%d_%I-%M%p.",timeinfo);
+    puts (buffer);
+
+    std::string recordPath1 = "record/";
+    std::string recordPath = recordPath1 + buffer;
+    // recordPath2 << "record" << buffer;
+    std::cout << recordPath << std::endl;
 
     // Set record flags
     ale.setString("record_screen_dir", recordPath.c_str());
@@ -64,12 +82,16 @@ int main(int argc, char** argv) {
     // Get the vector of legal actions
     ActionVect legal_actions = ale.getLegalActionSet();
 
-    // Play a single episode, which we record. 
+    // Play a single or more episodes, which we record. 
+    for (int episode=0; episode<50; episode++) {
     while (!ale.game_over()) {
         
         Action a = legal_actions[rand() % legal_actions.size()];
+        a = MRI_PULSE;
         // Apply the action (discard the resulting reward) 
         ale.act(a);
+    }
+    ale.reset_game();
     }
 
     std::cout << std::endl;
