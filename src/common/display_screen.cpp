@@ -14,14 +14,19 @@
  *  Supports displaying the screen via SDL. 
  **************************************************************************** */
  //ive added this
+#include <iostream>
 #include "display_screen.h"
 #include "SoundSDL.hxx"
+#include <chrono>
+#include <thread>
+#include <unistd.h>
 using namespace std;
 #ifdef __USE_SDL
 DisplayScreen::DisplayScreen(MediaSource* mediaSource,
                              Sound* sound,
                              ColourPalette &palette):
         manual_control_active(true),
+        block_on(true),
         media_source(mediaSource),
         my_sound(sound),
         colour_palette(palette),
@@ -39,11 +44,12 @@ DisplayScreen::DisplayScreen(MediaSource* mediaSource,
         exit(1);
     }
     screen = SDL_SetVideoMode(window_width, window_height, 8, SDL_HWPALETTE);
-    // uncomment for full screen 
-    //screen = SDL_SetVideoMode(window_width, window_height, 8, SDL_HWPALETTE | SDL_FULLSCREEN);
-    SDL_ShowCursor(0);
+    // uncomment below for full screen 
+    // screen = SDL_SetVideoMode(window_width, window_height, 8, SDL_HWPALETTE | SDL_FULLSCREEN);
+    // SDL_ShowCursor(0);
     // SDL_SetRelativeMouseMode(SDL_TRUE);
-    SDL_WM_GrabInput( SDL_GRAB_ON );
+    // trap mouse cursor in video frame
+    // SDL_WM_GrabInput( SDL_GRAB_ON );
 
     if (screen == NULL) {
         fprintf(stderr, "Couldn't Initialize Screen: %s\n", SDL_GetError());
@@ -56,6 +62,47 @@ DisplayScreen::DisplayScreen(MediaSource* mediaSource,
             "[Slowdown] 'a' [Speedup] 's' [VolumeDown] '[' [VolumeUp] ']'.\n");
 
     last_frame_time = SDL_GetTicks();
+
+
+    // Load the image
+    SDL_Surface* image = NULL;
+    image = SDL_LoadBMP("fixation_cross.bmp");
+    //image = SDL_LoadBMP("breakout_resized.bmp");
+    //Create an optimized image
+    SDL_Surface* optimizedImage = NULL;
+    optimizedImage = SDL_DisplayFormat(image);
+        
+    //Free the old image
+    SDL_FreeSurface(image);
+
+    // Apply the image to the display
+	if (SDL_BlitSurface(optimizedImage, NULL, screen, NULL) != 0)
+	{	
+ 		fprintf(stderr, "Couldnt blit \n");
+ 		exit(1);
+	}
+    
+    //SDL_Flip(screen);
+    bool loop=0;
+    while(loop == 0){
+    	if (getUserAction() == PROCEED){
+    		fprintf(stderr, "Ready for MRI Pulse... \n");
+    		while(loop == 0){
+    			if (getUserAction() == MRI_PULSE){
+    				//put on the fixation cross
+    				SDL_Flip(screen);
+    				//sleep_for(nanoseconds(10));
+    				usleep(9000000);
+    				loop = 1;
+    			}
+    		}
+    	}
+    }
+
+    //set the start time of the block
+    startTime = SDL_GetTicks();
+    //fprintf(stderr, "Block started at %d time\n", startTime);
+    fprintf(stderr, "Window is this %d big\n", window_height);
 }
 
 DisplayScreen::~DisplayScreen() {
@@ -95,13 +142,31 @@ void DisplayScreen::display_screen() {
     Uint32 newTime = SDL_GetTicks();
     Uint32 delta = newTime - min(last_frame_time, newTime);
 
+    //if 8 minutes have passed, terminate the game
+    Uint32 blockDuration = newTime - startTime;
+    // modify the block length here in milliseconds, 480,000 = 8 minutes
+    if (blockDuration > 60000){
+    	block_on = false;
+    	SDL_Surface* image;
+    	image = SDL_LoadBMP("fixation_cross.bmp");
+    	// Apply the image to the display
+		if (SDL_BlitSurface(image, NULL, screen, NULL) != 0)
+		{	
+ 			fprintf(stderr, "Couldnt blit \n");
+ 			exit(1);
+		}
+		SDL_Flip(screen);
+		usleep(9000000);
+    }
+
     if (delta < delay_msec) {
         SDL_Delay(delay_msec - delta);
     } else {
         // Try to keep up with the delay
         last_frame_time = SDL_GetTicks() + delta - delay_msec;
-        manual_control_active = true;
+        //manual_control_active = true;
     }
+    manual_control_active = true;
 
 }
 
@@ -112,6 +177,10 @@ void DisplayScreen::poll() {
         handleSDLEvent(event);
     }
 };
+
+void DisplayScreen::manualSwitch() {
+	manual_control_active = false;
+	};
 
 void DisplayScreen::handleSDLEvent(const SDL_Event& event) {
     switch (event.type) {
@@ -162,7 +231,7 @@ void DisplayScreen::handleSDLEvent(const SDL_Event& event) {
 
 Action DisplayScreen::getUserAction() {
     if (!manual_control_active) {
-        manual_control_active = true;
+        //manual_control_active = true;
         return UNDEFINED;
     }
 
@@ -171,12 +240,30 @@ Action DisplayScreen::getUserAction() {
     SDL_PumpEvents();
     Uint8* keymap = SDL_GetKeyState(NULL);
 
-    int mdltx, mdlty;
-    auto r = SDL_GetRelativeMouseState(&mdltx, &mdlty);
+    // for mouse movement
+    //int mdltx, mdlty;
+    //auto r = SDL_GetRelativeMouseState(&mdltx, &mdlty);
 
     // Break out of this loop if the 'p' key is pressed
     if (keymap[SDLK_p]) {
       return PLAYER_A_NOOP;
+      // MRI Pulse Actions
+    } else if ((keymap[SDLK_5] && keymap[SDLK_SPACE]) || (keymap[SDLK_5] && keymap[SDLK_4])) {
+      a = MRI_PULSE_FIRE;
+    } else if ((keymap[SDLK_5] && keymap[SDLK_LEFT]) || (keymap[SDLK_5] && keymap[SDLK_1])) {
+      a = MRI_PULSE_LEFT;
+    } else if ((keymap[SDLK_5] && keymap[SDLK_RIGHT]) || (keymap[SDLK_5] && keymap[SDLK_2])) {
+      a = MRI_PULSE_RIGHT;
+    } else if (keymap[SDLK_5] && keymap[SDLK_UP]) {
+      a = MRI_PULSE_UP;
+    } else if (keymap[SDLK_5] && keymap[SDLK_DOWN]) {
+      a = MRI_PULSE_DOWN;
+    } else if (keymap[SDLK_5] && keymap[SDLK_SPACE] && keymap[SDLK_LEFT]) {
+      a = MRI_PULSE_LEFTFIRE;
+    } else if (keymap[SDLK_5] && keymap[SDLK_SPACE] && keymap[SDLK_RIGHT]) {
+      a = MRI_PULSE_RIGHTFIRE;
+    } else if (keymap[SDLK_5]){
+      a = MRI_PULSE;
       // Triple Actions
     } else if (keymap[SDLK_UP] && keymap[SDLK_RIGHT] && keymap[SDLK_SPACE]) {
       a = PLAYER_A_UPRIGHTFIRE;
@@ -199,29 +286,28 @@ Action DisplayScreen::getUserAction() {
       a = PLAYER_A_UPFIRE;
     } else if (keymap[SDLK_DOWN] && keymap[SDLK_SPACE]) {
       a = PLAYER_A_DOWNFIRE;
-    } else if (keymap[SDLK_LEFT] && keymap[SDLK_SPACE]) {
+    } else if ((keymap[SDLK_LEFT] && keymap[SDLK_SPACE]) || (keymap[SDLK_1] && keymap[SDLK_4])) {
       a = PLAYER_A_LEFTFIRE;
-    } else if (keymap[SDLK_RIGHT] && keymap[SDLK_SPACE]) {
+    } else if ((keymap[SDLK_RIGHT] && keymap[SDLK_SPACE]) || (keymap[SDLK_2] && keymap[SDLK_4])) {
       a = PLAYER_A_RIGHTFIRE;
       // Single Actions
-    } else if (keymap[SDLK_SPACE] || keymap[SDLK_2] || keymap[SDLK_3] || !!(r&SDL_BUTTON(SDL_BUTTON_RIGHT)) || !!(r&SDL_BUTTON(SDL_BUTTON_LEFT))) {
+    } else if (keymap[SDLK_SPACE] || keymap[SDLK_4]) { ////|| keymap[SDLK_2] || keymap[SDLK_3] || !!(r&SDL_BUTTON(SDL_BUTTON_RIGHT)) || !!(r&SDL_BUTTON(SDL_BUTTON_LEFT))) {
       a = PLAYER_A_FIRE;
     } else if (keymap[SDLK_RETURN]) {
       a = PLAYER_A_NOOP;
-    } else if (keymap[SDLK_LEFT] || mdltx < 0) {
+    } else if (keymap[SDLK_LEFT] || keymap[SDLK_1]) {
       a = PLAYER_A_LEFT;
-    } else if (keymap[SDLK_RIGHT] || mdltx > 0) {
+    } else if (keymap[SDLK_RIGHT] || keymap[SDLK_2]) {
       a = PLAYER_A_RIGHT;
-    } else if (keymap[SDLK_UP] || mdlty < 0) {
+    } else if (keymap[SDLK_UP]) {
       a = PLAYER_A_UP;
-    } else if (keymap[SDLK_DOWN] || mdlty > 0) {
+    } else if (keymap[SDLK_DOWN]) {
       a = PLAYER_A_DOWN;
-    } else if (keymap[SDLK_5]){
-        a = MRI_PULSE;
-        manual_control_active = false;
+    } else if (keymap[SDLK_b]){
+      a = PROCEED;
     }
       else if (keymap[SDLK_q]){
-        SDL_Quit();
+      SDL_Quit();
     }
     
     return a;

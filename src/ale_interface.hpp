@@ -84,6 +84,9 @@ public:
   // Indicates if the game has ended.
   bool game_over() const;
 
+  // Indicates if the block has ended.
+  bool block_over() const;
+
   // Resets the game, but not the full system.
   void reset_game();
 

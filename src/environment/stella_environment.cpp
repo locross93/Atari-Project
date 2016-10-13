@@ -141,6 +141,18 @@ void StellaEnvironment::noopIllegalActions(Action & player_a_action, Action & pl
     player_b_action = (Action)PLAYER_B_NOOP;
   else if (player_a_action == MRI_PULSE)
     player_a_action = (Action)PLAYER_A_NOOP;
+  else if (player_a_action == MRI_PULSE_FIRE)
+    player_a_action = (Action)PLAYER_A_FIRE;
+  else if (player_a_action == MRI_PULSE_LEFT)
+    player_a_action = (Action)PLAYER_A_LEFT;
+  else if (player_a_action == MRI_PULSE_RIGHT)
+    player_a_action = (Action)PLAYER_A_RIGHT;
+  else if (player_a_action == MRI_PULSE_UP)
+    player_a_action = (Action)PLAYER_A_UP;
+  else if (player_a_action == MRI_PULSE_LEFTFIRE)
+    player_a_action = (Action)PLAYER_A_LEFTFIRE;
+  else if (player_a_action == MRI_PULSE_RIGHTFIRE)
+    player_a_action = (Action)PLAYER_A_RIGHTFIRE;
 }
 
 reward_t StellaEnvironment::act(Action player_a_action, Action player_b_action) {

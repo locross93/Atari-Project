@@ -192,6 +192,11 @@ bool ALEInterface::game_over() const {
   return environment->isTerminal();
 }
 
+// Indicates if the block has ended.
+bool ALEInterface::block_over() const {
+  return theOSystem->p_display_screen->block_continue();
+}
+
 // The remaining number of lives.
 const int ALEInterface::lives() {
   if (!romSettings.get()){
@@ -208,11 +213,12 @@ reward_t ALEInterface::act(Action action) {
   reward_t reward = environment->act(action, PLAYER_B_NOOP);
   if (theOSystem->p_display_screen != NULL) {
     theOSystem->p_display_screen->display_screen();
-    while (theOSystem->p_display_screen->manual_control_engaged()) {
+    while (theOSystem->p_display_screen->manual_control_engaged() && theOSystem->p_display_screen->block_continue() && environment->isTerminal() == 0) {
       Action user_action = theOSystem->p_display_screen->getUserAction();
       reward += environment->act(user_action, PLAYER_B_NOOP);
       theOSystem->p_display_screen->display_screen();
     }
+    theOSystem->p_display_screen->manualSwitch();
   }
   
   return reward;

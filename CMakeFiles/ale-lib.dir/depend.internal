@@ -1652,6 +1652,22 @@ CMakeFiles/ale-lib.dir/src/environment/stella_environment.cpp.o
  /usr/local/include/SDL/SDL_video.h
  /usr/local/include/SDL/begin_code.h
  /usr/local/include/SDL/close_code.h
+ src/ale_interface.hpp
+ src/common/ColourPalette.hpp
+ src/common/Constants.h
+ src/common/Log.hpp
+ src/common/ScreenExporter.hpp
+ src/common/display_screen.h
+ src/emucore/FSNode.hxx
+ src/emucore/MediaSrc.hxx
+ src/emucore/OSystem.hxx
+ src/emucore/m6502/src/bspf/src/bspf.hxx
+ src/environment/stella_environment.hpp
+ src/games/Roms.hpp
+ src/os_dependent/OSystemUNIX.hxx
+ src/os_dependent/OSystemWin32.hxx
+ src/os_dependent/SettingsUNIX.hxx
+ src/os_dependent/SettingsWin32.hxx
 CMakeFiles/ale-lib.dir/src/games/RomSettings.cpp.o
  /Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/common/Constants.h
  /Users/logancross/Documents/Atari/Arcade-Learning-Environment-master/src/emucore/Deserializer.hxx

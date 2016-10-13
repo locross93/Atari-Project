@@ -69,7 +69,15 @@ enum Action {
     LOAD_STATE              = 44,
     SYSTEM_RESET            = 45,
     LAST_ACTION_INDEX       = 50,
-    MRI_PULSE               = 51
+    MRI_PULSE               = 51,
+    MRI_PULSE_FIRE          = 52,
+    MRI_PULSE_LEFT          = 53,
+    MRI_PULSE_RIGHT         = 54,
+    MRI_PULSE_UP            = 55,
+    MRI_PULSE_DOWN          = 56,
+    MRI_PULSE_LEFTFIRE      = 57,
+    MRI_PULSE_RIGHTFIRE     = 58,
+    PROCEED                 = 59
 };
 
 #define PLAYER_A_MAX (18)

@@ -38,6 +38,12 @@ public:
     // Has the user engaged manual control mode?
     bool manual_control_engaged() { return manual_control_active; }
 
+    // switch manual control mode to false
+    void manualSwitch();
+
+    // Has the block ended?
+    bool block_continue() { return block_on; }
+
     // Captures the keypress of a user in manual control mode.
     Action getUserAction();
 
@@ -54,6 +60,7 @@ protected:
     static const int window_width = 428;
     // Maintains the paused/unpaused state of the game
     bool manual_control_active;
+    bool block_on;
     MediaSource* media_source;
     Sound* my_sound;
     ColourPalette &colour_palette;
@@ -63,6 +70,7 @@ protected:
     Uint32 delay_msec;
     // Used to calibrate delay between frames
     Uint32 last_frame_time;
+    Uint32 startTime;
 };
 #else
 /** A dummy class that simply ignores display events. */

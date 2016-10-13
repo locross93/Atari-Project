@@ -1651,6 +1651,22 @@ CMakeFiles/ale-bin.dir/src/environment/stella_environment.cpp.o: /usr/local/incl
 CMakeFiles/ale-bin.dir/src/environment/stella_environment.cpp.o: /usr/local/include/SDL/SDL_video.h
 CMakeFiles/ale-bin.dir/src/environment/stella_environment.cpp.o: /usr/local/include/SDL/begin_code.h
 CMakeFiles/ale-bin.dir/src/environment/stella_environment.cpp.o: /usr/local/include/SDL/close_code.h
+CMakeFiles/ale-bin.dir/src/environment/stella_environment.cpp.o: src/ale_interface.hpp
+CMakeFiles/ale-bin.dir/src/environment/stella_environment.cpp.o: src/common/ColourPalette.hpp
+CMakeFiles/ale-bin.dir/src/environment/stella_environment.cpp.o: src/common/Constants.h
+CMakeFiles/ale-bin.dir/src/environment/stella_environment.cpp.o: src/common/Log.hpp
+CMakeFiles/ale-bin.dir/src/environment/stella_environment.cpp.o: src/common/ScreenExporter.hpp
+CMakeFiles/ale-bin.dir/src/environment/stella_environment.cpp.o: src/common/display_screen.h
+CMakeFiles/ale-bin.dir/src/environment/stella_environment.cpp.o: src/emucore/FSNode.hxx
+CMakeFiles/ale-bin.dir/src/environment/stella_environment.cpp.o: src/emucore/MediaSrc.hxx
+CMakeFiles/ale-bin.dir/src/environment/stella_environment.cpp.o: src/emucore/OSystem.hxx
+CMakeFiles/ale-bin.dir/src/environment/stella_environment.cpp.o: src/emucore/m6502/src/bspf/src/bspf.hxx
+CMakeFiles/ale-bin.dir/src/environment/stella_environment.cpp.o: src/environment/stella_environment.hpp
+CMakeFiles/ale-bin.dir/src/environment/stella_environment.cpp.o: src/games/Roms.hpp
+CMakeFiles/ale-bin.dir/src/environment/stella_environment.cpp.o: src/os_dependent/OSystemUNIX.hxx
+CMakeFiles/ale-bin.dir/src/environment/stella_environment.cpp.o: src/os_dependent/OSystemWin32.hxx
+CMakeFiles/ale-bin.dir/src/environment/stella_environment.cpp.o: src/os_dependent/SettingsUNIX.hxx
+CMakeFiles/ale-bin.dir/src/environment/stella_environment.cpp.o: src/os_dependent/SettingsWin32.hxx
 
 CMakeFiles/ale-bin.dir/src/games/RomSettings.cpp.o: src/common/Constants.h
 CMakeFiles/ale-bin.dir/src/games/RomSettings.cpp.o: src/emucore/Deserializer.hxx
