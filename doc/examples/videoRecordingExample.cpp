@@ -23,6 +23,7 @@
 #include <cstdlib>
 #include <ctime>
 #include <chrono>
+#include <unistd.h>
 #include <time.h>
 
 #ifndef __USE_SDL
@@ -35,6 +36,32 @@ using namespace std;
 
 // random generator function:
 int myrandom (int i) { return std::rand()%i;}
+
+int getUserInput() {
+
+    int a = 0;
+    SDL_PumpEvents();
+    Uint8* keymap = SDL_GetKeyState(NULL);
+
+    // for mouse movement
+    //int mdltx, mdlty;
+    //auto r = SDL_GetRelativeMouseState(&mdltx, &mdlty);
+
+    // Break out of this loop if the 'p' key is pressed
+    if (keymap[SDLK_p]) {
+      return PLAYER_A_NOOP;
+      // MRI Pulse Actions
+    } else if (keymap[SDLK_5]){
+      a = 2;
+    } else if (keymap[SDLK_b]){
+      a = 1;
+    }
+      else if (keymap[SDLK_q]){
+      SDL_Quit();
+    }
+    
+    return a;
+}
 
 int main(int argc, char** argv) {
     if (argc < 4) {
@@ -74,9 +101,15 @@ int main(int argc, char** argv) {
     // You may leave sound disabled (by setting this flag to false) if so desired. 
     ale.setBool("sound", false);
 
+    string subNum;
+    std::cout << "Subject number: " << std::endl;
+    std::cin >> subNum;
+    std::cout << "You typed: " << subNum << std::endl;
+
     // loop over the 6 blocks of gameplay in a random sequence
     for (int j=0; j<6; ++j) {
 
+    // get current time and create a string so folder can be timestamped
     time_t rawtime;
     struct tm * timeinfo;
     char buffer [80];
@@ -84,11 +117,21 @@ int main(int argc, char** argv) {
     time (&rawtime);
     timeinfo = localtime (&rawtime);
 
-    strftime (buffer,80,"%m-%d_%I-%M%p.",timeinfo);
+    strftime (buffer,80,"%m-%d_%I-%M",timeinfo);
     puts (buffer);
 
+    // which game are we playing
+    int game = game_sequence[j];
+
+    // convert loop and game numbers to string so folder can be marked by block and game type
+    std::string loop_num = std::to_string(j+1);
+    std::string game_num = std::to_string(game);
+
     std::string recordPath1 = "record/";
-    std::string recordPath = recordPath1 + buffer;
+    std::string recordPathSub = recordPath1 + "sub" + subNum;
+    // final path should look like: record/subject number/block number, game number, date, time 
+    std::string recordPath = recordPath1 + "sub" + subNum + "/b" + loop_num + "g" + game_num + "_" + buffer;
+    // std::string recordPath = recordPath1 + buffer;
     // recordPath2 << "record" << buffer;
     std::cout << recordPath << std::endl;
 
@@ -100,17 +143,17 @@ int main(int argc, char** argv) {
 
     // Not completely portable, but will work in most cases
     std::string cmd = "mkdir ";
-    cmd += recordPath; 
+    cmd += recordPathSub; 
     system(cmd.c_str());
-    std::cout << "Before for loop \n" << std::endl;
+    std::string cmd2 = "mkdir ";
+    cmd2 += recordPath; 
+    system(cmd2.c_str());
     // loop over the 6 blocks of gameplay in a random sequence
     // for (int j=0; j<6; ++j) {
     // Load the ROM file. (Also resets the system for new settings to
     // take effect.)
-    int game = game_sequence[j];
 
     // record start time of the run before you proceed in actions.txt with 111
-    std::cout << "Before load ROM \n" << std::endl;
     std::ostringstream outFileName;
     std::ostringstream actionString;
     outFileName << recordPath << "/" <<  "actions.txt";
@@ -119,9 +162,53 @@ int main(int argc, char** argv) {
     actFile << actionString.str();
     actFile.close();
 
-    // load the ROM for the current game in the block
-    ale.loadROM(argv[game + 1]);
-    std::cout << "After load ROM \n" << std::endl;
+    // uncomment below for full screen 
+    SDL_Surface *screen;
+    screen = SDL_SetVideoMode(428, 321, 8, SDL_HWPALETTE);
+    // uncomment below for full screen 
+    // screen = SDL_SetVideoMode(428, 321, 8, SDL_HWPALETTE | SDL_FULLSCREEN);
+
+    if (screen == NULL) {
+        fprintf(stderr, "Couldn't Initialize Screen: %s\n", SDL_GetError());
+        exit(1);
+    }
+
+    // Load the image
+    SDL_Surface* image = NULL;
+    image = SDL_LoadBMP("fixation_cross.bmp");
+    //image = SDL_LoadBMP("breakout_resized.bmp");
+    //Create an optimized image
+    SDL_Surface* optimizedImage = NULL;
+    optimizedImage = SDL_DisplayFormat(image);
+        
+    //Free the old image
+    SDL_FreeSurface(image);
+
+    // Apply the image to the display
+    if (SDL_BlitSurface(optimizedImage, NULL, screen, NULL) != 0)
+    {   
+        fprintf(stderr, "Couldnt blit \n");
+        exit(1);
+    }
+
+    bool loop=0;
+    while(loop == 0){
+        if (getUserInput() == 1){
+            fprintf(stderr, "Ready for MRI Pulse... \n");
+            while(loop == 0){
+                if (getUserInput() == 2){
+                    //put on the fixation cross
+                    SDL_Flip(screen);
+                    //sleep_for(nanoseconds(10));
+                    //std::this_thread::sleep_for(std::chrono::milliseconds(10000));
+                    //for (int j=0; j<6; ++j) {
+                    usleep(10000000);
+                    //}
+                    loop = 1;
+                }
+            }
+        }
+    }
 
     // mark when a the first fixation cross ends with 222
     std::ostringstream actionString2;
@@ -129,6 +216,9 @@ int main(int argc, char** argv) {
     std::ofstream actFile2(outFileName.str(), std::ios_base::app);
     actFile2 << actionString2.str();
     actFile2.close();
+
+    // load the ROM for the current game in the block
+    ale.loadROM(argv[game + 1]);
 
     // Get the vector of legal actions
     ActionVect legal_actions = ale.getLegalActionSet();
@@ -138,9 +228,7 @@ int main(int argc, char** argv) {
         
         Action a = legal_actions[rand() % legal_actions.size()];
         // Apply the action (discard the resulting reward)
-        std::cout << "Before act \n" << std::endl; 
         ale.act(a);
-        std::cout << "After act\n" << std::endl;
 
     if (ale.game_over()){
         ale.reset_game();

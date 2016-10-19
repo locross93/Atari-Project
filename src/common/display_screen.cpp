@@ -63,46 +63,8 @@ DisplayScreen::DisplayScreen(MediaSource* mediaSource,
 
     last_frame_time = SDL_GetTicks();
 
-
-    // Load the image
-    SDL_Surface* image = NULL;
-    image = SDL_LoadBMP("fixation_cross.bmp");
-    //image = SDL_LoadBMP("breakout_resized.bmp");
-    //Create an optimized image
-    SDL_Surface* optimizedImage = NULL;
-    optimizedImage = SDL_DisplayFormat(image);
-        
-    //Free the old image
-    SDL_FreeSurface(image);
-
-    // Apply the image to the display
-	if (SDL_BlitSurface(optimizedImage, NULL, screen, NULL) != 0)
-	{	
- 		fprintf(stderr, "Couldnt blit \n");
- 		exit(1);
-	}
-    
-    //SDL_Flip(screen);
-    bool loop=0;
-    while(loop == 0){
-    	if (getUserAction() == PROCEED){
-    		fprintf(stderr, "Ready for MRI Pulse... \n");
-    		while(loop == 0){
-    			if (getUserAction() == MRI_PULSE){
-    				//put on the fixation cross
-    				SDL_Flip(screen);
-    				//sleep_for(nanoseconds(10));
-    				usleep(9000000);
-    				loop = 1;
-    			}
-    		}
-    	}
-    }
-
     //set the start time of the block
     startTime = SDL_GetTicks();
-    //fprintf(stderr, "Block started at %d time\n", startTime);
-    fprintf(stderr, "Window is this %d big\n", window_height);
 }
 
 DisplayScreen::~DisplayScreen() {
@@ -156,7 +118,8 @@ void DisplayScreen::display_screen() {
  			exit(1);
 		}
 		SDL_Flip(screen);
-		usleep(9000000);
+		usleep(10000000);
+		SDL_Quit();
     }
 
     if (delta < delay_msec) {
