@@ -176,7 +176,6 @@ int main(int argc, char** argv) {
     // Load the image
     SDL_Surface* image = NULL;
     image = SDL_LoadBMP("fixation_cross.bmp");
-    //image = SDL_LoadBMP("breakout_resized.bmp");
     //Create an optimized image
     SDL_Surface* optimizedImage = NULL;
     optimizedImage = SDL_DisplayFormat(image);
