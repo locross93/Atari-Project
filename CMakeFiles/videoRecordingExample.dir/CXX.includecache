@@ -27,6 +27,8 @@ unistd.h
 -
 time.h
 -
+string.h
+-
 SDL.h
 -
 
