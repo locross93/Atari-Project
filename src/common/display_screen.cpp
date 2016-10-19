@@ -43,9 +43,9 @@ DisplayScreen::DisplayScreen(MediaSource* mediaSource,
         fprintf(stderr, "Could not initialize SDL: %s\n", SDL_GetError());
         exit(1);
     }
-    screen = SDL_SetVideoMode(window_width, window_height, 8, SDL_HWPALETTE);
+    // screen = SDL_SetVideoMode(window_width, window_height, 8, SDL_HWPALETTE);
     // uncomment below for full screen 
-    // screen = SDL_SetVideoMode(window_width, window_height, 8, SDL_HWPALETTE | SDL_FULLSCREEN);
+    screen = SDL_SetVideoMode(window_width, window_height, 8, SDL_HWPALETTE | SDL_FULLSCREEN);
     // SDL_ShowCursor(0);
     // SDL_SetRelativeMouseMode(SDL_TRUE);
     // trap mouse cursor in video frame
@@ -107,7 +107,7 @@ void DisplayScreen::display_screen() {
     //if 8 minutes have passed, terminate the game
     Uint32 blockDuration = newTime - startTime;
     // modify the block length here in milliseconds, 480,000 = 8 minutes
-    if (blockDuration > 60000){
+    if (blockDuration > 480000){
     	block_on = false;
     	SDL_Surface* image;
     	image = SDL_LoadBMP("fixation_cross.bmp");
@@ -118,7 +118,7 @@ void DisplayScreen::display_screen() {
  			exit(1);
 		}
 		SDL_Flip(screen);
-		usleep(10000000);
+		usleep(60000000);
 		SDL_Quit();
     }
 

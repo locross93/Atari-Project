@@ -164,9 +164,9 @@ int main(int argc, char** argv) {
 
     // uncomment below for full screen 
     SDL_Surface *screen;
-    screen = SDL_SetVideoMode(428, 321, 8, SDL_HWPALETTE);
+    // screen = SDL_SetVideoMode(428, 321, 8, SDL_HWPALETTE);
     // uncomment below for full screen 
-    // screen = SDL_SetVideoMode(428, 321, 8, SDL_HWPALETTE | SDL_FULLSCREEN);
+    screen = SDL_SetVideoMode(428, 321, 8, SDL_HWPALETTE | SDL_FULLSCREEN);
 
     if (screen == NULL) {
         fprintf(stderr, "Couldn't Initialize Screen: %s\n", SDL_GetError());
@@ -202,7 +202,7 @@ int main(int argc, char** argv) {
                     //sleep_for(nanoseconds(10));
                     //std::this_thread::sleep_for(std::chrono::milliseconds(10000));
                     //for (int j=0; j<6; ++j) {
-                    usleep(10000000);
+                    usleep(60000000);
                     //}
                     loop = 1;
                 }
