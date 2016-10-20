@@ -106,8 +106,8 @@ void DisplayScreen::display_screen() {
 
     //if 8 minutes have passed, terminate the game
     Uint32 blockDuration = newTime - startTime;
-    // modify the block length here in milliseconds, 480,000 = 8 minutes
-    if (blockDuration > 480000){
+    // modify the block length here in milliseconds, 300,000 = 5 minutes for practice
+    if (blockDuration > 300000){
     	block_on = false;
     	SDL_Surface* image;
     	image = SDL_LoadBMP("fixation_cross.bmp");
@@ -118,7 +118,7 @@ void DisplayScreen::display_screen() {
  			exit(1);
 		}
 		SDL_Flip(screen);
-		usleep(60000000);
+		usleep(5000000);
 		SDL_Quit();
     }
 
@@ -211,7 +211,7 @@ Action DisplayScreen::getUserAction() {
     if (keymap[SDLK_p]) {
       return PLAYER_A_NOOP;
       // MRI Pulse Actions
-    } else if ((keymap[SDLK_5] && keymap[SDLK_SPACE]) || (keymap[SDLK_5] && keymap[SDLK_4])) {
+    } else if ((keymap[SDLK_5] && keymap[SDLK_SPACE]) || (keymap[SDLK_5] && keymap[SDLK_0])) {
       a = MRI_PULSE_FIRE;
     } else if ((keymap[SDLK_5] && keymap[SDLK_LEFT]) || (keymap[SDLK_5] && keymap[SDLK_1])) {
       a = MRI_PULSE_LEFT;
@@ -249,12 +249,12 @@ Action DisplayScreen::getUserAction() {
       a = PLAYER_A_UPFIRE;
     } else if (keymap[SDLK_DOWN] && keymap[SDLK_SPACE]) {
       a = PLAYER_A_DOWNFIRE;
-    } else if ((keymap[SDLK_LEFT] && keymap[SDLK_SPACE]) || (keymap[SDLK_1] && keymap[SDLK_4])) {
+    } else if ((keymap[SDLK_LEFT] && keymap[SDLK_SPACE]) || (keymap[SDLK_1] && keymap[SDLK_0])) {
       a = PLAYER_A_LEFTFIRE;
-    } else if ((keymap[SDLK_RIGHT] && keymap[SDLK_SPACE]) || (keymap[SDLK_2] && keymap[SDLK_4])) {
+    } else if ((keymap[SDLK_RIGHT] && keymap[SDLK_SPACE]) || (keymap[SDLK_2] && keymap[SDLK_0])) {
       a = PLAYER_A_RIGHTFIRE;
       // Single Actions
-    } else if (keymap[SDLK_SPACE] || keymap[SDLK_4]) { ////|| keymap[SDLK_2] || keymap[SDLK_3] || !!(r&SDL_BUTTON(SDL_BUTTON_RIGHT)) || !!(r&SDL_BUTTON(SDL_BUTTON_LEFT))) {
+    } else if (keymap[SDLK_SPACE] || keymap[SDLK_0]) { ////|| keymap[SDLK_2] || keymap[SDLK_3] || !!(r&SDL_BUTTON(SDL_BUTTON_RIGHT)) || !!(r&SDL_BUTTON(SDL_BUTTON_LEFT))) {
       a = PLAYER_A_FIRE;
     } else if (keymap[SDLK_RETURN]) {
       a = PLAYER_A_NOOP;

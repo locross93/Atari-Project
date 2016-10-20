@@ -86,7 +86,7 @@ int main(int argc, char** argv) {
         }
     }
 
-    for (int j=0; j<6; ++j) {
+    for (int j=0; j<3; ++j) {
         std::cout << game_sequence[j];
     }
     std::cout << std::endl;
@@ -130,7 +130,7 @@ int main(int argc, char** argv) {
     std::string recordPath1 = "record/";
     std::string recordPathSub = recordPath1 + "sub" + subNum;
     // final path should look like: record/subject number/block number, game number, date, time 
-    std::string recordPath = recordPath1 + "sub" + subNum + "/b" + loop_num + "g" + game_num + "_" + buffer;
+    std::string recordPath = recordPath1 + "sub" + subNum + "/b" + loop_num + "g" + j + "_" + buffer;
     // std::string recordPath = recordPath1 + buffer;
     // recordPath2 << "record" << buffer;
     std::cout << recordPath << std::endl;
@@ -201,7 +201,7 @@ int main(int argc, char** argv) {
                     //sleep_for(nanoseconds(10));
                     //std::this_thread::sleep_for(std::chrono::milliseconds(10000));
                     //for (int j=0; j<6; ++j) {
-                    usleep(60000000);
+                    usleep(5000000);
                     //}
                     loop = 1;
                 }
@@ -217,7 +217,7 @@ int main(int argc, char** argv) {
     actFile2.close();
 
     // load the ROM for the current game in the block
-    ale.loadROM(argv[game + 1]);
+    ale.loadROM(argv[j + 1]);
 
     // Get the vector of legal actions
     ActionVect legal_actions = ale.getLegalActionSet();
