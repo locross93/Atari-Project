@@ -1,0 +1,5 @@
+/home/lcross/Documents/Arcade-Learning-Environment-0.5.1/CMakeFiles/ale-bin.dir
+/home/lcross/Documents/Arcade-Learning-Environment-0.5.1/CMakeFiles/ale-c-lib.dir
+/home/lcross/Documents/Arcade-Learning-Environment-0.5.1/CMakeFiles/ale-lib.dir
+/home/lcross/Documents/Arcade-Learning-Environment-0.5.1/CMakeFiles/sharedLibraryInterfaceExample.dir
+/home/lcross/Documents/Arcade-Learning-Environment-0.5.1/CMakeFiles/videoRecordingExample.dir
