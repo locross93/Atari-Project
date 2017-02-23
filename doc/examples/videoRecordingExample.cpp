@@ -105,9 +105,8 @@ int main(int argc, char** argv) {
         game_num = "2";
     }
 
-    std::string recordPath = recordPath1 + "g" + game_num + "_" + buffer;
-    // std::string recordPath = recordPath1 + buffer;
-    // recordPath2 << "record" << buffer;
+    // std::string recordPath = recordPath1 + "g" + game_num + "_" + buffer;
+    std::string recordPath = recordPath1 + buffer;
     std::cout << recordPath << std::endl;
 
     // Set record flags

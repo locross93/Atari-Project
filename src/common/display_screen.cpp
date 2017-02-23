@@ -104,24 +104,6 @@ void DisplayScreen::display_screen() {
     Uint32 newTime = SDL_GetTicks();
     Uint32 delta = newTime - min(last_frame_time, newTime);
 
-    //if 8 minutes have passed, terminate the game
-    Uint32 blockDuration = newTime - startTime;
-    // modify the block length here in milliseconds, 480,000 = 8 minutes
-    if (blockDuration > 480000){
-    	block_on = false;
-    	SDL_Surface* image;
-    	image = SDL_LoadBMP("fixation_cross.bmp");
-    	// Apply the image to the display
-		if (SDL_BlitSurface(image, NULL, screen, NULL) != 0)
-		{	
- 			fprintf(stderr, "Couldnt blit \n");
- 			exit(1);
-		}
-		SDL_Flip(screen);
-		usleep(60000000);
-		SDL_Quit();
-    }
-
     if (delta < delay_msec) {
         SDL_Delay(delay_msec - delta);
     } else {
