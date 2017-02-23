@@ -25,6 +25,7 @@
 #include <chrono>
 #include <unistd.h>
 #include <time.h>
+#include <string.h>
 
 #ifndef __USE_SDL
 #error Video recording example is disabled as it requires SDL. Recompile with -DUSE_SDL=ON. 
@@ -64,32 +65,11 @@ int getUserInput() {
 }
 
 int main(int argc, char** argv) {
-    if (argc < 4) {
-        std::cout << "Usage: " << argv[0] << " three rom_files" << std::endl;
+    if (argc < 2) {
+        std::cout << "Usage: " << argv[0] << " one rom_file" << std::endl;
         return 1;
     }
 
-    //create a random sequence of what games to play 
-    srand(time(NULL));
-    int game_sequence[6] = {0, 1, 2, 0, 1, 2};
-    bool loop = 0;
-    while (loop==0){
-
-        for (int i=5; i>0; --i) {
-        swap (game_sequence[i],game_sequence[myrandom(i+1)]);
-        }
-        loop = 1;
-        for (int j=0; j<5; ++j) {
-            if (game_sequence[j] == game_sequence[j+1]){
-                loop = 0;
-            }
-        }
-    }
-
-    for (int j=0; j<6; ++j) {
-        std::cout << game_sequence[j];
-    }
-    std::cout << std::endl;
 
     ALEInterface ale;
 
@@ -101,13 +81,6 @@ int main(int argc, char** argv) {
     // You may leave sound disabled (by setting this flag to false) if so desired. 
     ale.setBool("sound", false);
 
-    string subNum;
-    std::cout << "Subject number: " << std::endl;
-    std::cin >> subNum;
-    std::cout << "You typed: " << subNum << std::endl;
-
-    // loop over the 6 blocks of gameplay in a random sequence
-    for (int j=0; j<6; ++j) {
 
     // get current time and create a string so folder can be timestamped
     time_t rawtime;
@@ -120,17 +93,19 @@ int main(int argc, char** argv) {
     strftime (buffer,80,"%m-%d_%I-%M",timeinfo);
     puts (buffer);
 
-    // which game are we playing
-    int game = game_sequence[j];
-
-    // convert loop and game numbers to string so folder can be marked by block and game type
-    std::string loop_num = std::to_string(j+1);
-    std::string game_num = std::to_string(game);
-
     std::string recordPath1 = "record/";
-    std::string recordPathSub = recordPath1 + "sub" + subNum;
-    // final path should look like: record/subject number/block number, game number, date, time 
-    std::string recordPath = recordPath1 + "sub" + subNum + "/b" + loop_num + "g" + game_num + "_" + buffer;
+    
+    // create a string for the game we are playing
+    std::string game_num;
+    if (strncmp(argv[1],"enduro.bin", 5) == 0) {
+        game_num = "0";
+    } else if (strncmp(argv[1],"pong.bin", 5) == 0) {
+        game_num = "1";
+    } else if (strncmp(argv[1],"space-invaders.bin", 5) == 0) {
+        game_num = "2";
+    }
+
+    std::string recordPath = recordPath1 + "g" + game_num + "_" + buffer;
     // std::string recordPath = recordPath1 + buffer;
     // recordPath2 << "record" << buffer;
     std::cout << recordPath << std::endl;
@@ -142,9 +117,6 @@ int main(int argc, char** argv) {
     ale.setInt("fragsize", 64);
 
     // Not completely portable, but will work in most cases
-    std::string cmd = "mkdir ";
-    cmd += recordPathSub; 
-    system(cmd.c_str());
     std::string cmd2 = "mkdir ";
     cmd2 += recordPath; 
     system(cmd2.c_str());
@@ -164,9 +136,9 @@ int main(int argc, char** argv) {
 
     // uncomment below for full screen 
     SDL_Surface *screen;
-    // screen = SDL_SetVideoMode(428, 321, 8, SDL_HWPALETTE);
+    screen = SDL_SetVideoMode(428, 321, 8, SDL_HWPALETTE);
     // uncomment below for full screen 
-    screen = SDL_SetVideoMode(428, 321, 8, SDL_HWPALETTE | SDL_FULLSCREEN);
+    // screen = SDL_SetVideoMode(428, 321, 8, SDL_HWPALETTE | SDL_FULLSCREEN);
 
     if (screen == NULL) {
         fprintf(stderr, "Couldn't Initialize Screen: %s\n", SDL_GetError());
@@ -190,24 +162,6 @@ int main(int argc, char** argv) {
         exit(1);
     }
 
-    bool loop=0;
-    while(loop == 0){
-        if (getUserInput() == 1){
-            fprintf(stderr, "Ready for MRI Pulse... \n");
-            while(loop == 0){
-                if (getUserInput() == 2){
-                    //put on the fixation cross
-                    SDL_Flip(screen);
-                    //sleep_for(nanoseconds(10));
-                    //std::this_thread::sleep_for(std::chrono::milliseconds(10000));
-                    //for (int j=0; j<6; ++j) {
-                    usleep(60000000);
-                    //}
-                    loop = 1;
-                }
-            }
-        }
-    }
 
     // mark when a the first fixation cross ends with 222
     std::ostringstream actionString2;
@@ -217,7 +171,7 @@ int main(int argc, char** argv) {
     actFile2.close();
 
     // load the ROM for the current game in the block
-    ale.loadROM(argv[game + 1]);
+    ale.loadROM(argv[1]);
 
     // Get the vector of legal actions
     ActionVect legal_actions = ale.getLegalActionSet();
@@ -247,7 +201,7 @@ int main(int argc, char** argv) {
     std::ofstream actFile4(outFileName.str(), std::ios_base::app);
     actFile4 << actionString4.str();
     actFile4.close();
-    }
+
     return 0;
 }
 #endif // __USE_SDL
