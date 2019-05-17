@@ -43,10 +43,13 @@ DisplayScreen::DisplayScreen(MediaSource* mediaSource,
         fprintf(stderr, "Could not initialize SDL: %s\n", SDL_GetError());
         exit(1);
     }
-    screen = SDL_SetVideoMode(window_width, window_height, 8, SDL_HWPALETTE);
+
+    SDL_putenv((char *) "SDL_VIDEO_WINDOW_POS=0,0"); //Change position of game window
+    //screen = SDL_SetVideoMode(window_width, window_height, 8, SDL_HWPALETTE);
+    screen = SDL_SetVideoMode(1400, 1050, 8, SDL_HWPALETTE);
     // uncomment below for full screen 
     // screen = SDL_SetVideoMode(window_width, window_height, 8, SDL_HWPALETTE | SDL_FULLSCREEN);
-    // SDL_ShowCursor(0);
+    SDL_ShowCursor(0);
     // SDL_SetRelativeMouseMode(SDL_TRUE);
     // trap mouse cursor in video frame
     // SDL_WM_GrabInput( SDL_GRAB_ON );
@@ -88,8 +91,8 @@ void DisplayScreen::display_screen() {
         y = i / screen_width;
         x = i - (y * screen_width);
         colour_palette.getRGB(pi_curr_frame_buffer[i], r, g, b);
-        rect.x = (int)(x * xratio);
-        rect.y = (int)(y * yratio);
+        rect.x = (int)(x * xratio) + 272; // can change this to where game is but not the background LC 5/9/19
+        rect.y = (int)(y * yratio) + 204;
         rect.w = xciel;
         rect.h = yciel;
         SDL_FillRect(screen, &rect, SDL_MapRGB(screen->format, r, g, b));
@@ -103,6 +106,24 @@ void DisplayScreen::display_screen() {
     // Wait a while, calibrating so that the delay remains the same
     Uint32 newTime = SDL_GetTicks();
     Uint32 delta = newTime - min(last_frame_time, newTime);
+
+    //if 8 minutes have passed, terminate the game
+    Uint32 blockDuration = newTime - startTime;
+    // modify the block length here in milliseconds, 480,000 = 8 minutes
+    if (blockDuration > 480000){
+    	block_on = false;
+    	SDL_Surface* image;
+    	image = SDL_LoadBMP("fixation_cross.bmp");
+    	// Apply the image to the display
+		if (SDL_BlitSurface(image, NULL, screen, NULL) != 0)
+		{	
+ 			fprintf(stderr, "Couldnt blit \n");
+ 			exit(1);
+		}
+		SDL_Flip(screen);
+		usleep(60000000);
+		SDL_Quit();
+    }
 
     if (delta < delay_msec) {
         SDL_Delay(delay_msec - delta);
@@ -246,7 +267,7 @@ Action DisplayScreen::getUserAction() {
       a = PLAYER_A_RIGHT;
     } else if (keymap[SDLK_UP]) {
       a = PLAYER_A_UP;
-    } else if (keymap[SDLK_DOWN]) {
+    } else if (keymap[SDLK_DOWN] || keymap[SDLK_3]) {
       a = PLAYER_A_DOWN;
     } else if (keymap[SDLK_b]){
       a = PROCEED;

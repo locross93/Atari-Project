@@ -149,6 +149,8 @@ void StellaEnvironment::noopIllegalActions(Action & player_a_action, Action & pl
     player_a_action = (Action)PLAYER_A_RIGHT;
   else if (player_a_action == MRI_PULSE_UP)
     player_a_action = (Action)PLAYER_A_UP;
+  else if (player_a_action == MRI_PULSE_DOWN)
+    player_a_action = (Action)PLAYER_A_DOWN;
   else if (player_a_action == MRI_PULSE_LEFTFIRE)
     player_a_action = (Action)PLAYER_A_LEFTFIRE;
   else if (player_a_action == MRI_PULSE_RIGHTFIRE)
