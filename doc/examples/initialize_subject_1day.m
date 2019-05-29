@@ -1,5 +1,11 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%1. Run initialize_subject_1day.m (or 2day)
+%2. Run calibrate_subj.m
+%3. Run run_game.m for every run
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %Input subject number
-subID = input('Subject number: ');
+subID = input('Subject number: ','s');
 
 %Randomize the sequence of games with the condition of not playing the same
 %game twice in a row

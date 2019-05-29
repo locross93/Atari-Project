@@ -183,9 +183,9 @@ int main(int argc, char** argv) {
             //sleep_for(nanoseconds(10));
             //std::this_thread::sleep_for(std::chrono::milliseconds(10000));
             //for (int j=0; j<6; ++j) {
-            usleep(5000000);
+            //usleep(5000000);
             //UNCOMMENT BELOW FOR FULL MINUTE
-            //usleep(60000000);
+            usleep(60000000);
             //}
             loop = 1;
         }
