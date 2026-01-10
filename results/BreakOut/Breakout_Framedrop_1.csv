@@ -1,0 +1,17 @@
+env_id,ALE/Breakout-v5
+noise_type,framedrop
+severity,1
+episodes,10
+
+episode,return,steps
+1,64.0,1035
+2,18.0,532
+3,5.0,161
+4,100.0,1069
+5,19.0,562
+6,13.0,392
+7,113.0,1203
+8,10.0,375
+9,27.0,684
+10,78.0,1011
+mean,44.7,

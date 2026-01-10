@@ -1,0 +1,47 @@
+# =====================
+# Build and CMake outputs
+# =====================
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+cmake_uninstall.cmake
+*.cmake
+*.log
+*.o
+*.so
+*.a
+*.out
+
+# =====================
+# Python build artifacts
+# =====================
+ale_python_interface/
+ale_python_interface.egg-info/
+__pycache__/
+*.pyc
+*.pyo
+
+# =====================
+# Environment and IDE
+# =====================
+.env/
+.venv/
+.vscode/
+.DS_Store
+
+# =====================
+# Game ROMs (local only)
+# =====================
+roms/
+ROMS/
+*.bin
+
+# =====================
+# Temporary or generated files
+# =====================
+*.zip
+*.csv
+
+# Ignore compiled paper outputs
+paper/*.pdf

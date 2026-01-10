@@ -1,0 +1,13 @@
+/Users/saba/Documents/NNBC_Seminar/Atari-Project/build/CMakeFiles/ale-lib.dir
+/Users/saba/Documents/NNBC_Seminar/Atari-Project/build/CMakeFiles/ale-bin.dir
+/Users/saba/Documents/NNBC_Seminar/Atari-Project/build/CMakeFiles/ale-c-lib.dir
+/Users/saba/Documents/NNBC_Seminar/Atari-Project/build/CMakeFiles/sharedLibraryInterfaceExample.dir
+/Users/saba/Documents/NNBC_Seminar/Atari-Project/build/CMakeFiles/fifoInterfaceExample.dir
+/Users/saba/Documents/NNBC_Seminar/Atari-Project/build/CMakeFiles/videoRecordingExample.dir
+/Users/saba/Documents/NNBC_Seminar/Atari-Project/build/CMakeFiles/uninstall.dir
+/Users/saba/Documents/NNBC_Seminar/Atari-Project/build/CMakeFiles/edit_cache.dir
+/Users/saba/Documents/NNBC_Seminar/Atari-Project/build/CMakeFiles/rebuild_cache.dir
+/Users/saba/Documents/NNBC_Seminar/Atari-Project/build/CMakeFiles/list_install_components.dir
+/Users/saba/Documents/NNBC_Seminar/Atari-Project/build/CMakeFiles/install.dir
+/Users/saba/Documents/NNBC_Seminar/Atari-Project/build/CMakeFiles/install/local.dir
+/Users/saba/Documents/NNBC_Seminar/Atari-Project/build/CMakeFiles/install/strip.dir

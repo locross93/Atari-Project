@@ -1,0 +1,17 @@
+env_id,ALE/SpaceInvaders-v5
+noise_type,saltpepper
+severity,2
+episodes,10
+
+episode,return,steps
+1,120.0,417
+2,190.0,467
+3,65.0,233
+4,65.0,190
+5,90.0,253
+6,65.0,175
+7,45.0,180
+8,5.0,157
+9,35.0,215
+10,250.0,672
+mean,93.0,

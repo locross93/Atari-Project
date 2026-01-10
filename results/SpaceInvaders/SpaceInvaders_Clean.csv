@@ -1,0 +1,16 @@
+env_id,ALE/SpaceInvaders-v5
+noise_type,None
+severity,N/A
+episodes,10
+episode,return,steps
+1,390.0,521
+2,505.0,724
+3,580.0,775
+4,505.0,719
+5,505.0,725
+6,505.0,718
+7,505.0,720
+8,390.0,523
+9,505.0,724
+10,505.0,719
+mean,489.5,

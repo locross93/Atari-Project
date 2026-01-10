@@ -1,0 +1,16 @@
+env_id,ALE/Breakout-v5
+noise_type,occlusion
+severity,3
+episodes,10
+episode,return,steps
+1,0.0,30
+2,1.0,74
+3,0.0,28
+4,22.0,578
+5,2.0,127
+6,21.0,606
+7,5.0,188
+8,1.0,54
+9,5.0,181
+10,7.0,244
+mean,6.4,

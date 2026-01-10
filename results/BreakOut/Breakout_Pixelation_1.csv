@@ -1,0 +1,17 @@
+env_id,ALE/Breakout-v5
+noise_type,pixelation
+severity,1
+episodes,10
+
+episode,return,steps
+1,0.0,34
+2,1.0,80
+3,1.0,82
+4,1.0,80
+5,1.0,80
+6,1.0,80
+7,1.0,80
+8,0.0,34
+9,1.0,80
+10,1.0,80
+mean,0.8,

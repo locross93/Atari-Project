@@ -1,0 +1,17 @@
+env_id,ALE/Enduro-v5
+noise_type,saltpepper
+severity,3
+episodes,10
+
+episode,return,steps
+1,71.0,3323
+2,105.0,3327
+3,94.0,3324
+4,96.0,3322
+5,105.0,3328
+6,43.0,3321
+7,96.0,3323
+8,95.0,3325
+9,104.0,3327
+10,95.0,3322
+mean,90.4,
